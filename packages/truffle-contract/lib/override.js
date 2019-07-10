@@ -38,7 +38,6 @@ var override = {
    */
   start: async function(context, web3Error){
     var constructor = this;
-    var blockNumber = null;
     var currentBlock = override.defaultMaxBlocks;
     var maxBlocks = constructor.timeoutBlocks;
 
@@ -70,7 +69,6 @@ var override = {
 
     // This will run every block from now until contract.timeoutBlocks
     var listener = function(pollID){
-      var self = this;
       currentBlock++;
 
       if (currentBlock > constructor.timeoutBlocks){

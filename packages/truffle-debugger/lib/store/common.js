@@ -22,7 +22,7 @@ export function abbreviateValues(value, options = {}, depth = 0) {
       value = [
         ...value.slice(0, options.arrayLimit / 2),
         "...",
-        ...value.slice(value.length - options.arrayLimit / 2 + 1)
+        ...value.slice(value.length - (options.arrayLimit / 2) + 1)
       ];
     }
 

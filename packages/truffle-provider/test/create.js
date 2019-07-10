@@ -22,7 +22,7 @@ describe("Provider", function() {
     var provider = Provider.create({host: "0.0.0.0", port: port});
     assert(provider);
 
-    Provider.test_connection(provider, function(error, coinbase) {
+    Provider.test_connection(provider, function(error, ) {
       assert.ifError(error);
       done();
     });
@@ -32,7 +32,7 @@ describe("Provider", function() {
     var provider = Provider.create({host: "0.0.0.0", port: "54321"});
     assert(provider);
 
-    Provider.test_connection(provider, function(error, coinbase) {
+    Provider.test_connection(provider, function(error, ) {
       assert(error);
       done();
     });
@@ -42,7 +42,7 @@ describe("Provider", function() {
     var provider = Provider.create({provider: new Ganache.provider()});
     assert(provider);
 
-    Provider.test_connection(provider, function(error, coinbase) {
+    Provider.test_connection(provider, function(error, ) {
       assert.ifError(error);
       done();
     });
@@ -55,7 +55,7 @@ describe("Provider", function() {
 
     assert(provider);
 
-    Provider.test_connection(provider, function(error, coinbase) {
+    Provider.test_connection(provider, function(error, ) {
       assert.ifError(error);
       done();
     });

@@ -6,13 +6,12 @@ function EPM(working_directory, contracts_build_directory) {
   this.contracts_build_directory = contracts_build_directory;
 };
 
-EPM.prototype.require = function(import_path, search_path) {
+EPM.prototype.require = function(import_path, ) {
   if (import_path.indexOf(".") === 0 || import_path.indexOf("/") === 0) {
     return null;
   }
 
   // Look to see if we've compiled our own version first.
-  var contract_filename = path.basename(import_path);
   var contract_name = path.basename(import_path, ".sol");
 
   // We haven't compiled our own version. Assemble from data in the lockfile.

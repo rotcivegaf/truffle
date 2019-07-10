@@ -12,7 +12,7 @@ export default function configureStore (reducer, saga, initialState) {
       "RECEIVE_TRACE", "SCOPE", "DECLARE_VARIABLE",
       "ASSIGN", "ADVANCE", "SAVE_STEPS", "BEGIN_STEP", "NEXT"
     ],
-    stateSanitizer: (state) => ({
+    stateSanitizer: (/*state*/) => ({
       // session: state.session,
       // context: state.context,
       // evm: state.evm,

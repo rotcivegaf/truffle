@@ -1,5 +1,3 @@
-const Example = artifacts.require("Example");
-
-module.exports = async function(deployer, network, accounts) {
+module.exports = async function(deployer) {
   await deployer.deploy(Hello);
 };

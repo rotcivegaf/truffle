@@ -1,7 +1,7 @@
 'use strict';
 
 let asyncTask = function() {
-  return new Promise(function(resolve, reject) {
+  return new Promise(function(resolve, ) {
     setTimeout(function() {
       resolve(45);
     }, 1000);

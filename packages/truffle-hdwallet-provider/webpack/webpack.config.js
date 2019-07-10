@@ -1,6 +1,5 @@
 const { resolve, join } = require("path");
 const { IgnorePlugin } = require("webpack");
-const path = require("path");
 
 const moduleRoot = resolve(__dirname, "..");
 const outputPath = join(moduleRoot, "dist");

@@ -1,7 +1,7 @@
 var Web3 = require("web3");
 var web3 = new Web3();
 
-module.exports = function(chai, utils) {
+module.exports = function(chai) {
   var assert = chai.assert;
   chai.Assertion.addProperty('address', function() {
     this.assert(this._obj.length === 42, 'expected #{this} to be a 42 character address (0x...)', 'expected #{this} to not be a 42 character address (0x...)');
