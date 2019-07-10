@@ -481,7 +481,7 @@ describe("Methods", function() {
         assert(
           e.receipt.status === false,
           "Triggered require should have receipt status:`false`"
-        )
+        );
       }
     });
 
